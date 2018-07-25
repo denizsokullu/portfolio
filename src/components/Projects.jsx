@@ -3,16 +3,26 @@ import styled from 'styled-components';
 import projectData from './projectData';
 
 const ProjectChunkWrapper = styled.div`
-  margin-top:2rem;
+  margin-bottom:4rem;
   h1{
-    font-size:1.4rem;
-    font-weight:500;
+    font-size:1.2rem;
+    font-weight:600;
   }
-  p{
+  p, div{
     margin-top:1rem;
+    font-size:.875rem;
+  }
+  h3{
+    font-size:1rem;
+    font-weight:600;
   }
   .desc{
 
+  }
+  div span{
+    a{
+      margin-right:1rem;
+    }
   }
 
 `
@@ -22,6 +32,7 @@ const ProjectWrapper = styled.div`
   & > h1 {
     font-size:1.6rem;
     color:#4870F8;
+    margin-bottom:2rem;
   }
 `
 
@@ -36,18 +47,36 @@ class Link extends Component {
 class ProjectChunk extends Component {
   render(){
     const project = this.props.project;
+    console.log(typeof project.link)
     return(
-      <ProjectChunkWrapper>
+      <ProjectChunkWrapper className='project-chunk'>
         <h1>{project.title}</h1>
         <p className='desc'>
           { project.desc !== '' ? project.desc : 'Project description not added'}
         </p>
-        <p>
+        <div>
+          <h3>Challenges</h3>
+          <p> {project.challenges} </p>
+        </div>
+        <div>
+          <h3>Technologies used</h3>
+          <p> {project.techUsed.join(', ') }</p>
+        </div>
+        <div>
+        <span>
           { project.code !== '' ? <Link to={project.code} text="Code"/> : 'Code not available'}
-        </p>
-        <p>
-          { project.link !== '' ? <Link to={project.link} text="Link"/> : 'Link not available'}
-        </p>
+        </span>
+        <span>
+          { project.link !== '' ?
+              typeof project.link === 'object' ?
+                  Object.keys(project.link).map((l,i)=>{
+                    console.log(project.link[l],l)
+                    return <Link to={project.link[l]} text={l}/>
+                  })
+               : <Link to={project.link} text="Link"/>
+            : 'Link not available'}
+        </span>
+        </div>
       </ProjectChunkWrapper>
     )
   }
