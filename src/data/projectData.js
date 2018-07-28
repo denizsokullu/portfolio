@@ -32,7 +32,7 @@ const projectData = [
     techUsed:['NodeJS','Pug','Express','Firebase','Anime.js'],
   },
   {
-    title:`IBM ICS Junior Summer Internship + Senior Part Time Work`,
+    title:`IBM Internship + Senior Part Time Work`,
     desc:`I worked in IBM Littleton, MA last summer under my manager Ethan Perry for IBM's Collaborative Solutions Design Team. My main task throughout the summer was to research if visual theming for the Connections application was possible and what were the possible options if so. After creating initial demos for the theming, this project was assigned a team and I stayed for the whole Senior year of my college as a part time employee working remotely to help the team to make theming a reality.`,
     challenges:`This was my first exposure to an Agile development environment with scrums almost every morning and a very organized task management. Technically, I had to learn how Connections worked in the back-end and how the current setup could be used to deliver a theme to the user of an organization. In terms of theming we created an organized stylesheet structure with the simplest variables to apply colors to components across Connections and constantly tested across multiple browsers before releasing the updates.`,
     techUsed:['NodeJS','SASS','Jquery']

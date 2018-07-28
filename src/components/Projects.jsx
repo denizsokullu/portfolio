@@ -7,6 +7,11 @@ const ProjectChunkWrapper = styled.div`
   h1{
     font-size:1.2rem;
     font-weight:600;
+    border-left: 4px solid #4A50FF;
+    padding-left: 1rem;
+    margin-left: calc(-1rem + -4px);
+    margin-bottom:1.5rem;
+  }
   }
   p, div{
     margin-top:1rem;

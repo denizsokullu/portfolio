@@ -1,10 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 body {
   padding: 0 550px;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 body * {
   color:#393939;
@@ -20,10 +20,14 @@ body * {
   box-sizing:border-box;
   padding:1rem;
 }
-
-@media(max-width:450px){
+@media(max-width:520px){
   .App{
     width:400px;
+  }
+}
+@media(max-width:450px){
+  .App{
+    width:380px;
   }
 }
 
