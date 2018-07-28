@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import projectData from './projectData';
+import projectData from '../data/projectData';
 
 const ProjectChunkWrapper = styled.div`
   margin-bottom:4rem;
@@ -47,7 +47,6 @@ class Link extends Component {
 class ProjectChunk extends Component {
   render(){
     const project = this.props.project;
-    console.log(typeof project.link)
     return(
       <ProjectChunkWrapper className='project-chunk'>
         <h1>{project.title}</h1>
@@ -70,8 +69,7 @@ class ProjectChunk extends Component {
           { project.link !== '' ?
               typeof project.link === 'object' ?
                   Object.keys(project.link).map((l,i)=>{
-                    console.log(project.link[l],l)
-                    return <Link to={project.link[l]} text={l}/>
+                    return <Link to={project.link[l]} key={i} text={l}/>
                   })
                : <Link to={project.link} text="Link"/>
             : 'Link not available'}

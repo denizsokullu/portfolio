@@ -41,7 +41,7 @@ const projectData = [
     title:`Computational Design Projects`,
     desc:`A design class taught by Kyuha Shim, Computational Design let me explore ways to create interesting typography using coding, and also to create a flipbook through coding!`,
     challenges:`Generative Typewriter - initially started as a single animation for text, I turned it into a sandbox for animating text. The project isn't complete as the final goal was to create an exportable version that could be displayed on any website. It was my first time using an online database and learning what 'callback hell' is(Now saved by promises!).
-    Flipbook Generator - was my attempt to write a simple AI that placed shapes of an vector art(mainly cute pets) randomly on the canvas and compared it to the final artwork and improved upon itss placing by slowly mutating its trials. The underlying algorithm known as the Genetic Algorithm was inspired by Dan from Coding Rainbow on YouTube!`,
+    Flipbook Generator - was my attempt to write a simple AI that placed shapes of an vector art(mainly cute pets) randomly on the canvas and compared it to the final artwork and improved upon itss placing by slowly mutating its trials. The underlying algorithm known as the Genetic Algorithm was inspired by Dan Shiffman from Coding Train on YouTube!`,
     code:`http://github.com/denizsokullu/computational-design`,
     link:`http://computational-design.denizsokullu.com`,
     techUsed:['React','NodeJS','p5.js'],
@@ -56,7 +56,7 @@ const projectData = [
   },
   {
     title:`The Gap`,
-    desc:`The final project of the Advanced Web Design class, Sara Remi Fields, Ruby He and I thought about depicting the gap of education in the US between different economic classes and locations.`,
+    desc:`The final project of the Advanced Web Design class, Sara Remi Fields, Ruby He and I thought about depicting the gap in education in the US between different economic classes and locations.`,
     challenges:`I think the hardest part about was the time crunch and the fact and using some experimental CSS features such as clipping masks.`,
     code:`http://github.com/denizsokullu/the-gap`,
     link:`the-gap.denizsokullu.com`,
