@@ -32,7 +32,7 @@ class Intro extends Component {
         <p>You can reach me at denizaydinsokullu@gmail.com!</p>
         <div>
           <span><a href={'https://github.com/denizsokullu'} target='_blank'>Github</a></span>
-          <span><a href={'resume-summer-2018.pdf'} target='_blank'>Resume</a></span>
+          <span><a href={'https://drive.google.com/file/d/1U05FUjCOs3G5pLtg95i5Y73aL9dy6JvG/view?usp=sharing'} target='_blank'>Resume</a></span>
         </div>
       </IntroWrapper>
     )
