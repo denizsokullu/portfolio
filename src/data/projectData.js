@@ -1,7 +1,7 @@
 const projectData = [
   {
     title:`Quo`,
-    desc:`A easy to use prototyping app aimed for building fast prototypes with components. Built using React and Redux with a Firebase database. The project is still ongoing and I am planning to release an alpha by this December.`,
+    desc:`A easy to use prototyping app aimed for building fast prototypes with components. Built using React and Redux with a Firebase database. The project is still ongoing and I am planning to release an alpha by this December. You can play around with the application by dropping in a .sketch file in!`,
     challenges:`It is a complex application with a Sketch like editor, with functionality to generate live links to preview the prototypes, store & update user content smoothly as the user edits their prototypes. There is also a complicated structure for storing the representation of a prototype, and parsing Sketch File format. This is my first time using Redux in a large scale and I am constantly creating simpler reducers and a more organized & normalized state tree.`,
     code:`https://github.com/denizsokullu/quo-app`,
     link:`http://quo-app-test.herokuapp.com`,
@@ -9,7 +9,7 @@ const projectData = [
   },
   {
     title:`Chrome History`,
-    desc:`A working prototype for a redesign made by Max Stein, this project was born out of the curiousness of how we could enhance the usage of Google Chrome History from finding links faster to many other new ideas we had for it.`,
+    desc:`A working prototype for a redesign made by Max Stein, this project was born out of the curiousness of how we could enhance the usage of Google Chrome History from finding links faster to many other new ideas we had for it. Check out /sidebar, /browsing-trends and /recent !`,
     challenges:`Applying the Google Material UI to new interactions and components was the core challenge. I had a lot of fun creating smooth animations for the sidebar but wished if the content was actually connected to the history of the user. The data visualizations were simple to create but unfortunately styling them to our needs was pretty hacky as Google was still providing an archaic API for generating the graphs.`,
     code:`https://github.com/denizsokullu/chrome-history`,
     link:`http://chrome-history.herokuapp.com`,
