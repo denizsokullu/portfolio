@@ -11,7 +11,7 @@ class Disclaimer extends Component {
   render(){
     return (
       <DisclaimerWrapper>
-          Disclaimer: As a web developer, I could have created a website to showcase my skills, but instead I wanted to showcase the projects I work on which I spent most of my time during & outside of school. The projects are organized by most recent and most important(the code for the projects also gets messier towards the bottom LOL). This website was built using React and the code is available in my Github.
+          Disclaimer: As a web developer, I could have created a website to showcase my skills, but instead I wanted to showcase the projects I work on which I spent most of my time during & outside of school. The projects are organized by most recent and most important. This website was built using React and the code is available in my Github.
       </DisclaimerWrapper>
     )
   }
