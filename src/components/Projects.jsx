@@ -36,8 +36,8 @@ const ProjectWrapper = styled.div`
   margin-top:2.5rem;
   & > h1 {
     font-size:1.6rem;
-    color:#4870F8;
-    margin-bottom:2rem;
+    color:#4A50FF;
+    margin-bottom:3rem;
   }
 `
 
@@ -66,20 +66,24 @@ class ProjectChunk extends Component {
           <h3>Technologies used</h3>
           <p> {project.techUsed.join(', ') }</p>
         </div>
-        <div>
-        <span>
-          { project.code !== '' ? <Link to={project.code} text="Code"/> : 'Code not available'}
-        </span>
-        <span>
-          { project.link !== '' ?
-              typeof project.link === 'object' ?
-                  Object.keys(project.link).map((l,i)=>{
-                    return <Link to={project.link[l]} key={i} text={l}/>
-                  })
-               : <Link to={project.link} text="Link"/>
-            : 'Link not available'}
-        </span>
-        </div>
+        { project.code && project.link ?
+          <div>
+            <span>
+              { project.link !== '' ?
+                  typeof project.link === 'object' ?
+                      Object.keys(project.link).map((l,i)=>{
+                        return <Link to={project.link[l]} key={i} text={l}/>
+                      })
+                   : <Link to={project.link} text="Link"/>
+                : 'Link not available'}
+            </span>
+            <span>
+              { project.code !== '' ? <Link to={project.code} text="Code"/> : 'Code not available'}
+            </span>
+          </div>
+          : null
+        }
+
       </ProjectChunkWrapper>
     )
   }
