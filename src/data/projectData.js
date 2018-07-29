@@ -25,10 +25,10 @@ const projectData = [
   },
   {
     title:`ACM@CMU Algorithms with a Purpose 2018`,
-    desc:`ACM's CMU branch hosts a series of events throughout the year. As the Creative Director of ACMU@CMU, and the main developer, I created the application to handle the programming day long contest for Algorithms with a Purpose 2018. Mostly based on the rules of the famous board game Risk, the students had to create AIs that would fight each other in a tournament style to conquer the most spots for their fast food chain.`,
-    challenges:`I had to create a server that would accept student code, run it safely with the main code to create an output, and display the output as an animation. The challenges were making sure that during the competition the server wouldn't crash and the students wouldn't be disqualified for 'technical reasons'. I also had to create a public pool where submissions would be automatically matched as well as a tournament bracket system for the final submisssions. I also had to tweak the animation library Anime.js to handle large inputs of data for smooth playback.`,
+    desc:`ACM's CMU branch hosts a series of events throughout the year. As the Creative Director of ACMU@CMU, and the main developer, I created the application to handle the programming day long contest for Algorithms with a Purpose 2018. Mostly based on the rules of the famous board game Risk, the students had to create AIs that would fight each other in a tournament style to conquer the most spots for their fast food chain. For demonstration purposes, the use the credentials provided to watch a replay of a private upload.`,
+    challenges:`I had to create a server that would accept student code, run it safely with the main code to create an output, and display the output as an animation. The challenges were making sure that during the competition the server wouldn't crash and the students wouldn't be disqualified for 'technical reasons'. I also had to create a public pool where submissions would be automatically matched as well as a tournament bracket system for the final submisssions. I also had to modify the animation library Anime.js to handle large inputs of data for smooth playback.`,
     code:`http://github.com/denizsokullu/awap-2018`,
-    link:`http://awap-2018.denizsokullu.com`,
+    link:`http://awap-2018-competition.herokuapp.com`,
     techUsed:['NodeJS','Pug','Express','Firebase','Anime.js'],
   },
   {
